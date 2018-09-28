@@ -1,0 +1,45 @@
+{
+  "name": "polvo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "cross-env NODE_PATH=src react-app-rewired start",
+    "build": "cross-env NODE_PATH=src react-app-rewired build",
+    "test": "cross-env NODE_PATH=src react-app-rewired test --env=jsdom",
+    "analyze": "source-map-explorer build/static/js/main.*",
+    "lint": "standard src/**/**/**/**/**/**.js",
+    "docs": "cross-env NODE_PATH=src styleguidist server",
+    "docs:build": "cross-env NODE_PATH=src styleguidist build",
+    "generate": "node ./scripts/generate.js",
+    "g": "yarn generate"
+  },
+  "dependencies": {
+    "final-form": "^4.10.0",
+    "is-email": "^1.0.0",
+    "is-object": "^1.0.1",
+    "msk": "^1.0.3",
+    "nanoid": "^1.2.4",
+    "object-path": "^0.11.4",
+    "polished": "^2.1.1",
+    "ramda": "^0.25.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-final-form": "^3.6.5",
+    "react-helmet": "^5.2.0",
+    "react-scripts": "1.1.5",
+    "recompose": "^0.30.0",
+    "styled-components": "4.0.0-beta.2",
+    "styled-tools": "^1.5.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "fs-extra": "^7.0.0",
+    "react-app-rewire-styled-components": "^3.0.2",
+    "react-app-rewired": "^1.6.2",
+    "react-styleguidist": "^7.3.8",
+    "standards": "^0.1.0",
+    "yargs": "^12.0.2"
+  }
+}

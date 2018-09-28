@@ -1,0 +1,3 @@
+```
+<FormRegister onSubmit={console.log}/>
+```
